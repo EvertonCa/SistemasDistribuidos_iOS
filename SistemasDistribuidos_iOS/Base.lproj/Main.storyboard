@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SistemasDistribuidos_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8rf-rg-Oju">
+                                <rect key="frame" x="50" y="447" width="314" height="2"/>
+                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jZ-Ke-gFC">
+                                <rect key="frame" x="182.5" y="392.5" width="49.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i16-kW-nbw">
+                                <rect key="frame" x="20" y="214" width="374" height="20.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Conectado com:">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jw-vh-M3O">
+                                <rect key="frame" x="148" y="648" width="118" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <size key="titleShadowOffset" width="3" height="3"/>
+                                <state key="normal" title="Começar">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FOB-Ka-Lwi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculador de Digitos de CPF e CNPJ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vkE-Ue-sve">
+                                <rect key="frame" x="31" y="76.5" width="352.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="i16-kW-nbw" secondAttribute="trailing" constant="20" id="4HS-IS-JO5"/>
+                            <constraint firstItem="7jw-vh-M3O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="5Y4-qM-65F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8rf-rg-Oju" secondAttribute="trailing" constant="30" id="7MW-yv-FO1"/>
+                            <constraint firstItem="3jZ-Ke-gFC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BBf-X9-JBf"/>
+                            <constraint firstItem="i16-kW-nbw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QTu-nx-l7h"/>
+                            <constraint firstItem="8rf-rg-Oju" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="Ujw-Oc-bOa"/>
+                            <constraint firstItem="i16-kW-nbw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="V3p-o4-bbb"/>
+                            <constraint firstItem="3jZ-Ke-gFC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.9" id="YmX-W7-AcC"/>
+                            <constraint firstItem="i16-kW-nbw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="d3R-xT-aH2"/>
+                            <constraint firstItem="8rf-rg-Oju" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jFo-uD-cSe"/>
+                            <constraint firstItem="vkE-Ue-sve" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="piG-FI-OC2"/>
+                            <constraint firstItem="vkE-Ue-sve" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.2" id="q34-2p-zdP"/>
+                            <constraint firstItem="8rf-rg-Oju" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s7i-Bt-oKF"/>
+                            <constraint firstItem="7jw-vh-M3O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wEF-pt-g57"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="connectedWithLabel" destination="i16-kW-nbw" id="c2z-MN-DEi"/>
+                        <outlet property="progressBar" destination="8rf-rg-Oju" id="2Da-7W-Gmh"/>
+                        <outlet property="startButton" destination="7jw-vh-M3O" id="9W1-F5-Fut"/>
+                        <outlet property="statusLabel" destination="3jZ-Ke-gFC" id="tyy-H5-bOQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+</document>
